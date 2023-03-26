@@ -104,6 +104,12 @@
   .icon {
     color: var(--primary-color)
   }
+
+  .input-box-dark {
+    background-color: #27262B;
+    color: white;
+  }
+  
   @media only screen and (max-width: 1000px) {
     .login-container {
       margin: auto;

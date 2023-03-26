@@ -43,10 +43,22 @@ document.querySelector(".signup-btn").addEventListener("click", function () {
 });
 
 
+// dark mode
 document.querySelector(".theme-toggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode")
-    document.querySelector(".login-container").classList.toggle("theme-toggle-dark")
-    document.querySelector(".bold-main-title").classList.toggle("dark-mode")
-    document.querySelector(".captcha-preview").classList.toggle("preview-captcha-dark")
-    document.querySelector(".header-container").classList.toggle("header-container-dark")   
-})
+  document.body.classList.toggle("dark-mode");
+  document
+    .querySelector(".login-container")
+    .classList.toggle("theme-toggle-dark");
+  document.querySelector(".bold-main-title").classList.toggle("dark-mode");
+  document
+    .querySelector(".captcha-preview")
+    .classList.toggle("preview-captcha-dark");
+  document
+    .querySelector(".header-container")
+    .classList.toggle("header-container-dark");
+
+  const nodeList = document.querySelectorAll(".input-box");
+  for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].classList.toggle("input-box-dark");
+  }
+});
