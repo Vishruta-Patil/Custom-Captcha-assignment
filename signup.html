@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>magniZent Store</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/colors.css" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/utility.css" />
+  <link rel="stylesheet" href="./styles/signup.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <div class="main-signin-box">
+    <div class="login-container signin-container flex-column">
+      <h2 class="main-header">REGISTER</h2>
+      <p class="top-msg gen-msg">Looks like you are new!! Please fill in the information below.</p>
+      <input type="text" class="input-box" placeholder="Enter your name" />
+      <input type="email" class="input-box" placeholder="Enter your email" />
+      <input type="password" class="input-box" placeholder="Enter your password" />
+
+      <div class="captcha-preview"></div>
+      <div class="captcha-box flex">
+        <input type="text" class="input-box captcha-input" placeholder="Enter captcha text" />
+
+        <button class="captcha-refresh-btn"><span class="material-icons">refresh</span></button>
+      </div>
+
+      <div class="terms-container flex">
+        <input id="terms-input" type="checkbox"> <label for="terms-input">I accept all the terms and conditions</label>
+      </div>
+
+      <button class="hero-btn signup-btn">Sign Up</button>
+      <p class="gen-msg">Already have an account? <a class="primary-color" href="login.html">Login in!</a></span></p>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
