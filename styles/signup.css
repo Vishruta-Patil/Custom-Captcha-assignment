@@ -15,7 +15,7 @@
   .main-header {
     font-size: 3rem;
     text-align: center;
-    color: var(--black-color);
+    color: var(--primary-color);
   }
   
   .gen-msg {
@@ -82,7 +82,28 @@
   .captcha-box {
     margin: 0;
   }
-  
+
+  .dark-mode {
+    background-color: #141319;
+    color: white;
+  }
+
+  .login-container-dark {
+    background-color: white;
+  }
+
+  .theme-toggle-dark {
+    border:  1px solid white;
+    font-size: 4rem;
+  }
+
+  .preview-captcha-dark {
+    border:  1px solid darkgray;
+  }
+
+  .icon {
+    color: var(--primary-color)
+  }
   @media only screen and (max-width: 1000px) {
     .login-container {
       margin: auto;

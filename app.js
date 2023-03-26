@@ -41,3 +41,12 @@ document.querySelector(".signup-btn").addEventListener("click", function () {
   if (userCaptchaValue === captchaText) swal("", "Signed In", "success");
   else swal("", "Invalid Captcha, Try Again!", "warning");
 });
+
+
+document.querySelector(".theme-toggle").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode")
+    document.querySelector(".login-container").classList.toggle("theme-toggle-dark")
+    document.querySelector(".bold-main-title").classList.toggle("dark-mode")
+    document.querySelector(".captcha-preview").classList.toggle("preview-captcha-dark")
+    document.querySelector(".header-container").classList.toggle("header-container-dark")   
+})

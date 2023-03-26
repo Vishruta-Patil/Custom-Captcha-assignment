@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>magniZent Store</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/colors.css" />
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/utility.css" />
@@ -17,6 +18,29 @@
 
 <body>
   <div class="main-signin-box">
+    <div class="header-container">
+      <div class="header">
+        <div class="logo" style="align-items: baseline; gap: 2rem">
+
+          <a class="primary-color" href="./index.html">
+            <h2 class="main-title">
+              <span class="bold-main-title secondary-color">VP</span>captcha <span class="bold-main-title ">
+            </h2>
+          </a>
+
+        </div>
+
+        <div class="flex icon-container">
+          <div class="icon-unit">
+            <div class="flex-column flex-center secondary-color header-icon">
+              <span class="material-icons icon md-48 theme-toggle"> dark_mode </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="login-container signin-container flex-column">
       <h2 class="main-header">REGISTER</h2>
       <p class="top-msg gen-msg">Looks like you are new!! Please fill in the information below.</p>
@@ -29,10 +53,6 @@
         <input type="text" class="input-box captcha-input" placeholder="Enter captcha text" />
 
         <button class="captcha-refresh-btn"><span class="material-icons">refresh</span></button>
-      </div>
-
-      <div class="terms-container flex">
-        <input id="terms-input" type="checkbox"> <label for="terms-input">I accept all the terms and conditions</label>
       </div>
 
       <button class="hero-btn signup-btn">Sign Up</button>
